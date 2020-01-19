@@ -1,0 +1,21 @@
+.pro{
+	float:right;
+	margin-top: 60px;
+
+}
+.pro li{
+	display:inline-block;
+	list-style:none;
+	margin-left: 40px;
+}
+.pro li a{
+	padding: 5px 0;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+.pro li a:hover{
+	border-bottom: 2px solid #bf55ec;
+}

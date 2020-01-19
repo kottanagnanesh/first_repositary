@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);}
+h1{
+margin-left:30%;
+margin-top:15%;}
+</style>
+<script>
+function validation()
+{
+	var a=document.getElementById("one").value;
+	var b=document.getElementById("two").value;
+	var c=document.getElementById("three").value;
+	if(a==""||b==""||c=="")
+	{
+		alert("required details are mandatory");
+	}
+	else if(b!=c)
+	{
+		alert("confirm password and password should be same");
+	}
+	else
+		window.location.href="https://themeforest.net/";
+}
+</script>
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIF2FsXzL7IV9gUEDOLw8qMAg_cYreijU5ywsbZwW3bC7Txzik">
+<h1><font face="Script" size="20" color="orange">USHA APPLIANCES</font></h1>
+<table cellpadding="50">
+<tr><td><font color="yellow"> USER NAME:</font></td><td><input id="one" type="text" placeholder="your name"></input></td></tr>
+<tr><td><font color="blue"> ENTER PASSWORD:</font></td><td><input id="two" type="password" placeholder="password"</input></tr>
+<tr><td><font color="pink"> CONFIRM PASSWORD:</font></td><td><input id="three" type="password" placeholder="confirm password"</input></tr>
+<tr><td><button onclick="validation()" id="but">LOGIN</button></td></tr>
+</table>
+</body>
+</html>
